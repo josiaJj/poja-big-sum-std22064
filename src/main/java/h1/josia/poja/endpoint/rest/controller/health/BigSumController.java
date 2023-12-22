@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @AllArgsConstructor
 public class BigSumController {
-    private final BigSumService bigSumService;
 
     @GetMapping("/big-sum")
     public BigInteger add(@RequestParam BigInteger a, @RequestParam BigInteger b) {
