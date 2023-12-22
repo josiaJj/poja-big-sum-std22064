@@ -14,12 +14,12 @@ public class BigSumControllerIT extends FacadeIT {
 
     @Test
     void can_do_addition() {
-        BigInteger a = BigInteger.valueOf(5);
-        BigInteger b =BigInteger.valueOf(2);
+        BigInteger a = BigInteger.valueOf(7);
+        BigInteger b =BigInteger.valueOf(3);
 
         BigInteger actual = bigSumController.add(a, b);
 
-        assertEquals(BigInteger.valueOf(7), actual);
+        assertEquals(BigInteger.valueOf(10), actual);
     }
 }
 
